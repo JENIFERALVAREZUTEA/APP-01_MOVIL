@@ -5,11 +5,13 @@ void main() {
     MaterialApp(
       home: Scaffold(backgroundColor: Color.fromARGB(255, 238, 238, 237),
       body: SafeArea(
-        child:Column(children: [ 
+        child:Column(
+          children: [ 
            Container(
           color: Color.fromARGB(255, 243, 245, 247),
           alignment: Alignment.topRight,
-          child:Row (children: [
+          child:Row (
+          children: [
           Container(
           color: Color.fromARGB(255, 243, 245, 247),
           alignment: Alignment.topCenter,
