@@ -31,10 +31,13 @@ class AlertPage extends StatelessWidget {
       context: context, 
       builder:(BuildContext context){
       return AlertDialog(
+       shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(10.0),
+        ),
      content: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            CircleAvatar(backgroundImage: NetworkImage("https://images.pexels.com/photos/262508/pexels-photo-262508.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"),),
+            CircleAvatar(backgroundImage: NetworkImage("https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/900px-Octicons-mark-github.svg.png?20180806170715"),),
              Title(
                   color: Colors.black,
                   child: Text("Blog post published"),
@@ -63,19 +66,44 @@ class AlertPage extends StatelessWidget {
       context: context, 
       builder:(BuildContext context){
       return AlertDialog(
-        title:Text("AlertDialog example!!!"),
-        backgroundColor:  Colors.white,
-        content: Text(
-          "este es un ejemplo de alert"),
+   shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(10.0),
+        ),
+     content: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Image.network("https://img.freepik.com/fotos-premium/senorita-su-espacio-trabajo-sonrie-trabaja_23-2148794494.jpg?w=900",
+          ),
+          
+             Title(
+                  color: Colors.black,
+                  child: Text("Your video has been uploaded!"),
+                ),
+                Text("you're video has finished ploading and is live."
+                    ), 
+          ],
+        ),
         actions: [
         TextButton(
           onPressed: (){
           Navigator.pop(context);
           }, 
-        child: Text("cancelar"),
+        child: Text("unitle.com/total/promo"),
         ),
         TextButton(onPressed: (){}, 
-        child: Text("aceptar"),
+        child: Text("copy link"),
+        ),
+         TextButton(
+          onPressed: (){
+          Navigator.pop(context);
+          }, 
+        child: Text("skip"),
+        ),
+         TextButton(
+          onPressed: (){
+          Navigator.pop(context);
+          }, 
+        child: Text("Next"),
         ),
         ],
       );
@@ -111,7 +139,7 @@ class AlertPage extends StatelessWidget {
            ),
            ElevatedButton(
             onPressed: (){
-              showMyAlert(context);
+              showMyAlert3(context);
             },
            child:  Text("alert 3"),
            )
