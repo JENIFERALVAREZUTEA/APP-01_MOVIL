@@ -12,6 +12,7 @@ class pantalla2 extends StatelessWidget {
       body: SafeArea( 
         child:Column(
           children: [ 
+            
            Container(
          color: Color.fromARGB(255, 243, 245, 247),
           height:50.0,
@@ -42,7 +43,7 @@ class pantalla2 extends StatelessWidget {
           ),
 
           CircleAvatar(radius: 66.0,backgroundColor:
-             Colors.grey,backgroundImage: 
+             Color.fromARGB(255, 237, 229, 229),backgroundImage: 
             NetworkImage("https://images.pexels.com/photos/1036623/pexels-photo-1036623.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"),
             ),
           Container(
@@ -234,35 +235,35 @@ class pantalla2 extends StatelessWidget {
           )
           ),
            Card(
-               color: Color.fromARGB(255, 178, 204, 230),
+            color: Color.fromARGB(255, 204, 217, 231),
               margin: EdgeInsets.all(15.0),
               elevation: 55.0,
               child: ListTile(
               title: Text("Sent"),
               subtitle: Text("Sending Payment Clients"),
               leading: Icon(Icons.arrow_circle_down,color: Colors.lightGreen,),
-              trailing: Icon(Icons.check_circle_outline),
+              trailing: Text("s/150"),
             ),
             ),
-Card(   color: Color.fromARGB(255, 130, 156, 182),
+Card( color: Color.fromARGB(255, 204, 217, 231),
               margin: EdgeInsets.all(15.0),
               elevation: 55.0,
               child: ListTile(
               title: Text("Receive"),
               subtitle: Text("Receving Salary from company "),
               leading: Icon(Icons.arrow_circle_up,color: Colors.lightGreen,),
-              trailing: Icon(Icons.check_circle_outline),
+              trailing: Text("s/250"),
             ),
             ),
             Card( 
-                 color: Color.fromARGB(255, 139, 160, 181),
+                 color: Color.fromARGB(255, 204, 217, 231),
               margin: EdgeInsets.all(15.0),
               elevation: 55.0,
               child: ListTile(
               title: Text("Loan"),
               subtitle: Text("Loan for the Car"),
               leading: Icon(Icons.monetization_on_outlined,color: Colors.lightGreen,),
-              trailing: Text("s/150"),
+              trailing: Text("s/400"),
             ),
             ),
           ],
