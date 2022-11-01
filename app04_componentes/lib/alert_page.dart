@@ -94,7 +94,7 @@ class AlertPage extends StatelessWidget {
                     ), 
           ],
         ),
-        Container
+        
         actions: [
         TextButton(
           onPressed: (){
