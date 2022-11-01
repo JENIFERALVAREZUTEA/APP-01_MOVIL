@@ -31,17 +31,28 @@ class AlertPage extends StatelessWidget {
       context: context, 
       builder:(BuildContext context){
       return AlertDialog(
-       shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(10.0),
-        ),
+        
+        
      content: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            CircleAvatar(backgroundImage: NetworkImage("https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/900px-Octicons-mark-github.svg.png?20180806170715"),),
-             Title(
-                  color: Colors.black,
-                  child: Text("Blog post published"),
-                ),
+          CircleAvatar(radius: 66.0,backgroundColor:
+             Colors.grey,backgroundImage: 
+            NetworkImage("https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/900px-Octicons-mark-github.svg.png?20180806170715"),
+            ),
+            Container(
+          color: Color.fromARGB(255, 255, 255, 255),
+          margin: EdgeInsets.only(left: 1.0,top:1.0),
+          alignment: Alignment.topLeft,
+          child:Text("Blog post published",
+          style: TextStyle(
+            fontSize:15.0,
+            color:Color.fromARGB(255, 12, 11, 11),
+            fontWeight: FontWeight.bold,
+          ),
+          )
+          ),
+                
                 Text("tihs blog post has been published . Team members"
                     "will be able to edit this post and republish changes"), 
           ],
@@ -83,6 +94,7 @@ class AlertPage extends StatelessWidget {
                     ), 
           ],
         ),
+        Container
         actions: [
         TextButton(
           onPressed: (){
